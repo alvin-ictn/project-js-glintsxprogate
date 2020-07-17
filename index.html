@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Garden Monitoring System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+</head>
+<body>
+    <div class="button left" onclick="showContent('left')">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    <div class="button right" onclick="showContent('right')">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+    <header>
+        <h2>Garden Tool</h2>
+        <h4>Home</h4>
+        <nav>
+            <ul id="top-menu">
+                <li><a href="#" class="topmenu-item"><i class="fas fa-home"></i><p class="top-text"> Home</p></a></li>
+                <li><a href="#" class="topmenu-item active"><i class="fas fa-user"></i><p class="top-text"> Profile</p></a></li>
+                <li><a href="#" class="topmenu-item"><i class="fas fa-cog"></i><p class="top-text"> Generate</p></a></li>
+            </ul>
+        </nav>
+        <div class="thumbnail">
+            <img src="" alt="">
+        </div>
+    </header>
+    <main>
+        <div id="content">
+            
+        </div>
+        <aside>
+            <div class="parameter-level">
+                <div class="param-items">
+                    <label class="ph-level-label"></label>
+                    <div class="param ph-level">
+                        <div class="value ph-level"></div>  
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="
+                            M10,16.513
+                            c-2.249,0-4.071-1.822-4.071-4.07
+                            c0-0.226-0.182-0.407-0.407-0.407
+                            c-0.225,0-0.407,0.182-0.407,0.407
+                            c0,2.697,2.187,4.885,4.885,4.885
+                            c0.225,3,2.407 1.183,0.807-11.407
+                            S10.225,11.513,10,11.513
+                            M10,1.044
+                            c-0.814,0-6.513,6.92-6.513,11.398
+                            c0,3.597,2.916,6.513,6.513,6.513
+                            c3.597,0,6.513-2.916,6.513-6.513
+                            C16.513,7.964,10.813,1.044,10,1.044 
+                            M13,18.141
+                            c3.148,0-8.699-6.65-5.699-5.92
+                            C4.301,8.372,11.593,34.011,10,2.011
+                            c0.407,0,5.698,6.36,5.698,10.209
+                            C15.698,15.49,13.147,18.141,10,18.141
+                            "></path>
+						</svg>
+                    </div>
+                    <div class="param-value ph-level">11/12</div>
+                </div>
+                <div class="param-items">
+                    <label class="temperature-label"></label>
+                    <div class="param temperature">
+                        <div class="value temperature">
+                        </div>
+                        <svg style="height:1.2em" class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="
+                            M10.867,12.751
+                            V7.4
+                            c0-0.478-0.388-0.866-0.866-0.866
+                            S9.134,6.923,9.134,7.4
+                            v5.351
+                            c-1.008,0.357-1.733,1.316-1.733,2.448
+                            c0,1.436,1.164,2.599,2.6,2.599
+                            c1.435,0,2.599-1.163,2.599-2.599
+                            C12.6,14.067,11.876,13.108,10.867,12.751 
+                            M12.6,11.739
+                            V3.068
+                            c0-1.436-1.164-2.6-2.599-2.6
+                            c-1.436,0-2.6,1.164-2.6,2.6
+                            v8.671
+                            c-1.05,0.79-1.733,2.044-1.733,3.46
+                            c0,2.393,1.939,4.332,4.333,4.332
+                            c2.392,0,4.333-1.939,4.333-4.332
+                            C14.333,13.783,13.65,12.529,12.6,11.739 
+                            M10,18.665
+                            c-1.914,0-3.466-1.552-3.466-3.466
+                            c0-1.282,0.698-2.399,1.733-2.250
+                            V3.068
+                            c0-0.957,0.776-1.733,1.733-1.733
+                            s1.733,0.776,1.733,1.733
+                            V12.2
+                            c1.035,0.6,1.732,1.717,1.732,2.250
+                            C13.466,17.113,11.914,18.665,10,18.665"></path>
+						</svg>
+                    </div>
+                    <div class="param-value temperature">15/40</div>
+                </div>
+                <div class="param-items">
+                    <label class="power-level-label"></label>
+                    <div class="param power-level">
+                        <div class="value power-level"></div>
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="
+                            M18.737,9.691
+                            h-5.462
+                            c-0.279,0-0.527,0.174-0.619,0.437
+                            l-1.444,4.104
+                            L8.984,3.195
+                            c-0.059-0.29-0.307-0.506-0.603-0.523
+                            C8.09,2.657,7.814,2.838,7.721,3.12
+                            L5.568,9.668
+                            H1.244
+                            c-0.36,0-0.655,0.291-0.655,0.655
+                            c0,0.36,0.294,0.655,0.655,0.655
+                            h4.8
+                            c0.281,0,0.532-0.182,0.621-0.45
+                            l1.526-4.645
+                            l2.207,10.938
+                            c0.059,0.289,0.304,0.502,0.595,0.524
+                            c0.016,0,0.031,0,0.046,0
+                            c0.276,0,0.524-0.174,0.619-0.437
+                            L13.738,11
+                            h4.250
+                            c0.363,0,0.655-0.294,0.655-0.655
+                            C19.392,9.982,19.1,9.691,18.737,9.691z"></path>
+                        </svg>
+                    </div>
+                    <div class="param-value power-level">98/100</div>
+                </div>
+                <div class="param-items">
+                    <label class="water-level-label"></label>
+                    <div class="param water-level">
+                        <div class="value water-level"></div>
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path fill="none" d="
+                            M10,16.513
+                            c-2.249,0-4.071-1.822-4.071-4.07
+                            c0-0.226-0.182-0.407-0.407-0.407
+                            c-0.225,0-0.407,0.182-0.407,0.407
+                            c0,2.697,2.187,4.885,4.885,4.885
+                            c0.225,0,0.407-0.183,0.407-0.407
+                            S10.225,16.513,10,16.513
+                            M10,1.044
+                            c-0.814,0-6.513,6.92-6.513,11.398
+                            c0,3.597,2.916,6.513,6.513,6.513
+                            c3.597,0,6.513-2.916,6.513-6.513
+                            C16.513,7.964,10.813,1.044,10,1.044 
+                            M10,18.141
+                            c-3.148,0-5.699-2.65-5.699-5.92
+                            C4.301,8.372,9.593,2.011,10,2.011
+                            c0.407,0,5.698,6.36,5.698,10.209
+                            C15.698,15.49,13.147,18.141,10,18.141
+                            "></path>
+						</svg>
+                    </div>
+                    <div class="param-value water-level">500/500</div>
+                </div>
+            </div>
+            <div id="#profile" class="profile">
+                <div class="profile-img">
+                </div>
+                <div class="profile-name">
+                    Alvin Mantovani
+                </div>
+                <div class="profile-title">
+                    Network Developer
+                </div>
+                <div class="profile-details">
+                    <div class="contact phone">
+                        <svg class="svg-icon" viewBox="0 0 64 64">
+							<path d="M58.9 47l-10.4-6.8a4.8 4.8 0 0 0-6.5 1.3c-2.4 2.9-5.3 7.7-16.2-3.2S19.6 24.4 22.5 22a4.8 4.8 0 0 0 1.3-6.5L17 5.1c-.9-1.3-2.1-3.4-4.9-3S2 6.6 2 15.6s7.1 20 16.8 29.7S39.5 62 48.4 62s13.2-8 13.5-10-1.7-4.1-3-5z" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="round"
+                            stroke-linecap="round"></path>
+                        </svg>
+                        <a>081276665862</a>
+                    </div>
+                    <div class="contact location">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path d="M10,1.375c-3.17,0-5.75,2.548-5.75,5.682c0,6.685,5.259,11.276,5.483,11.469c0.152,0.132,0.382,0.132,0.534,0c0.224-0.193,5.481-4.784,5.483-11.469C15.75,3.923,13.171,1.375,10,1.375 M10,17.653c-1.064-1.024-4.929-5.127-4.929-10.596c0-2.68,2.212-4.861,4.929-4.861s4.929,2.181,4.929,4.861C14.927,12.518,11.063,16.627,10,17.653 M10,3.839c-1.815,0-3.286,1.47-3.286,3.286s1.47,3.286,3.286,3.286s3.286-1.47,3.286-3.286S11.815,3.839,10,3.839 M10,9.589c-1.359,0-2.464-1.105-2.464-2.464S8.641,4.661,10,4.661s2.464,1.105,2.464,2.464S11.359,9.589,10,9.589"></path>
+                        </svg>
+                        <a>Pekanbaru, Indonesia</a>
+                    </div>
+                    <div class="contact email">
+                        <svg class="svg-icon" viewBox="0 0 64 64" >
+							<path stroke="#202020" stroke-miterlimit="10" stroke-width="2"    d="M2 12l30 29 30-29M42 31.6L62 52M2 52l20-20.4 M2 12h60v40H2z" stroke-linejoin="round" stroke-linecap="round"></path>
+                        </svg>
+                        <a href="mailto:alvin.ictn@gmail.com">alvin.ictn@gmail.com</a>
+                    </div>
+                    <div class="contact facebook">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+							<path fill="none" d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"></path>
+                        </svg>
+                        <a href="https://facebook.com/alvin.mtv">fb.com/alvin.mtv</a>
+                    </div>
+
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div>Made with ❤️ for everyone by Alvin Mantovani</div>
+    </footer>
+</body>
+<foot>
+    <script src="app.js"></script>
+</foot>
+</html>
